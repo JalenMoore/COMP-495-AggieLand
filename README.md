@@ -1,2 +1,2 @@
-# COMP-495
-Senior Project for COMP-495 2020 
+# AggieLand Secured
+## Senior Project for COMP-495 2020 
