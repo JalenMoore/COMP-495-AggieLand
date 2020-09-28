@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aggieland</title>
+    <link rel="stylesheet" type="text/css" href="./res/style.css">
+</head>
+
+<body>
+<h1>Welcome to Aggieland</h1>
+<p id="log"></p>
+
+<script>
+    var ws = new WebSocket("ws://localhost:8080/aggieland/home");
+    ws.onmessage = function (event) {
+        console.log(event.data);
+        document.getElementById("log").textContent += event.data + "\n";
+    }
+</script>
+</body>
+</html>
