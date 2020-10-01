@@ -10,12 +10,6 @@
 <h1>Welcome to Aggieland</h1>
 <p id="log"></p>
 
-<script>
-    var ws = new WebSocket("ws://localhost:8080/aggieland/home");
-    ws.onmessage = function (event) {
-        console.log(event.data);
-        document.getElementById("log").textContent += event.data + "\n";
-    }
-</script>
+<script src="res/script.js"></script>
 </body>
 </html>

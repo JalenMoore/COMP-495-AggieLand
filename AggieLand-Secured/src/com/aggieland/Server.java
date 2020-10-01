@@ -5,14 +5,13 @@ import javax.websocket.*;
 import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 
-@ServerEndpoint("/home")
+@ServerEndpoint(value = "/home")
 
 public class Server {
 
   @OnOpen
   public void open(Session session) throws IOException, EncodeException {
     session.getBasicRemote().sendText("(Server): Welcome to the chat room. Please state your username to begin.");
-
   }
 
   @OnClose
