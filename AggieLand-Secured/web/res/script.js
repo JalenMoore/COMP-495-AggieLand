@@ -13,6 +13,7 @@ websocket.onerror = function(event) {
     onError(event)
 };
 
+
 function onOpen(event) {
     console.log("Connected to Endpoint!");
     console.log("Event: " + event);
@@ -26,4 +27,9 @@ function onMessage(event) {
 
 function onError(event) {
     console.log("ERROR");
+}
+
+function send() {
+    websocket.send("sent");
+
 }
