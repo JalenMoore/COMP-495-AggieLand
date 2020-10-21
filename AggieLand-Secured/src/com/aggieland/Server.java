@@ -6,8 +6,9 @@ import javax.websocket.server.ServerEndpoint;
 import java.io.IOException;
 
 @ServerEndpoint(value = "/home")
-
 public class Server {
+
+
 
   @OnOpen
   public void open(Session session) throws IOException, EncodeException {
