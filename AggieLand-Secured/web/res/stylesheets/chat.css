@@ -1,0 +1,27 @@
+body, html {
+    height: 100%;
+    width: 100%;
+}
+nav {
+    height: 10%;
+}
+
+
+.row {
+    height: inherit;
+    background-color: orange;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 0;
+    height: 90%;
+}
+
+.col-3, .col-9 {
+    height: inherit;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin: 0;
+}
