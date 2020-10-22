@@ -15,21 +15,22 @@ websocket.onerror = function(event) {
 
 
 function onOpen(event) {
-    console.log("Connected to Endpoint!");
+    console.log("onOpen: Connected to Endpoint!");
     console.log("Event: " + event);
 }
 
 function onMessage(event) {
-    console.log("message Recieved");
+    console.log("OnMessage: Message Recieved From Server");
     console.log(event.data);
     document.getElementById("log").textContent += event.data + "\n";
 }
 
 function onError(event) {
-    console.log("ERROR");
+    console.log("onError: Error");
 }
 
 function send() {
+    console.log("send: Sent Message");
     websocket.send("sent");
 
 }

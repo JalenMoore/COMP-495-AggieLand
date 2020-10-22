@@ -3,8 +3,6 @@ width: 100%;
 height: 100%;
 }
 body {
-margin: 0;
-padding: 0;
 font-family: sans-serif;
 background: linear-gradient(to right, #002d74, #e6ad2f);
 }
@@ -135,7 +133,6 @@ border-bottom-right-radius: 50px;
 border-bottom-left-radius: 50px;
 }
 .container{
-height: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
