@@ -44,7 +44,6 @@ function initWebsocket() {
         addUserToScreen();
         console.log("OnMessage: Message Recieved From Server");
         console.log(event.data);
-        //document.getElementById("log").textContent += event.data + "\n";
     }
 
     function onError(event) {
